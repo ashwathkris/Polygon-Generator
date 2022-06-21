@@ -1,0 +1,14 @@
+Complexity factors of a polygon:
+
+1. Perimeter: Can be found using distance formula b/w two adjacent points.
+2. Area: Not sure, maybe using small sqaure method.
+3. Change of direction: Left, Right (Clockwise or Anticlockwise), Check for x,y value of the next adjacent coordinate.
+4. Notch: Angle more than 180 deg.
+5. Length of an edge: Using distance formula.
+6. Statistical Parameters: Minimum, Max, Mean, SD for each map complexity.
+7. Global Shape: Convex Hull(smaller weight in comparision to Amp and Freq)
+8. Local Vibration: Amplitude and Frequency
+9. Frequency: Notches(normal) 0 to 1, max at 0.5. For close vibrations.
+10. Complexity = 0.8*Amplitude*Frequency + 0.2*Convex hull (ranges from 0 to 1), 0.4>compl suggests complex object. (can vary with rquirements)
+	a. can make classes like 0<compl<0.2, 0.2<compl<0.4, and so on.
+11. Amplitude: Deviation from convex hull
